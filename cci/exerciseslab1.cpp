@@ -69,4 +69,11 @@ int main ()
     cout << numb << " Es mayor a " << numa << endl;
   }
   return 0;
+  //4 Intercambiar el valor de 2 variables sin una 3era temporal
+  int num_a, num_b;
+  cin >> num_a;
+  cin >> num_b;
+  num_a = num_b + num_a; // se almacena en num_a la suma de ambos numeros
+  num_b = num_a - num_b; // num_a que contiene la suma de ambos numeros se resta num_b para que este tenga el valor de num_a
+  num_a = num_a - num_b; // a la suma
 }
