@@ -76,4 +76,21 @@ int main ()
   num_a = num_b + num_a; // se almacena en num_a la suma de ambos numeros
   num_b = num_a - num_b; // num_a que contiene la suma de ambos numeros se resta num_b para que este tenga el valor de num_a
   num_a = num_a - num_b; // a la suma
+
+  // El numero mayor en 3 numeros
+  int val_a,
+      val_b,
+      val_c;
+  cin >> val_a;
+  cin >> val_b;
+  cin >> val_c;
+
+  if(val_a> val_b)
+  {
+    if(val_b > val_c){
+    cout << val_a << " es el mayor"
+
+    }
+    cout << val_a << " es el mayor"
+  }
 }
