@@ -6,7 +6,7 @@ una funcion que recibe argumentos por referencia*/
 using namespace std;
 
 //prototipo con paso de referencia
-void changeNumbers(int a , int b);
+void changeNumbers(int *r , int *b);
 int main()
 {
   //Declaracion e ingreso de datos para ambos numeros
@@ -23,7 +23,7 @@ int main()
   //uso de la funcion intercambio con punteros
   int *ptrA = &number_a;
   int *ptrB = &number_b;
-  changeNumbers(*ptrA, *ptrB);
+  changeNumbers(ptrA, ptrB);
 
   cout << "El valor de A ahora es " << number_a << endl;
   cout << "El valor de B ahora es " << number_b << endl;
