@@ -1,7 +1,7 @@
 /*Este programa implementa el algoritmo insertion con una funcion*/
 #include <iostream>
 using namespace std;
-
+//Prototipos de las funciones que se utilizaran
 void insertionSort(int arreglo[] , int lenght);
 void createArreglo(int arreglo[], int lenght);
 void printArreglo(int arreglo[], int lenght);
@@ -11,13 +11,13 @@ int main()
   cout << "Cuantos elementos ingresaras a la lista: ";
   int lenght; cin >> lenght;
   cout << endl;
-  int arreglo[lenght];
-  createArreglo(arreglo,lenght);
+  int arreglo[lenght];//declarando el arreglo
+  createArreglo(arreglo,lenght);//creando el arreglo
   cout << endl;
-  printArreglo(arreglo,lenght);
+  printArreglo(arreglo,lenght);//imprimiendo el arreglo
 
-  insertionSort(arreglo,lenght);
-  printArreglo(arreglo,lenght);
+  insertionSort(arreglo,lenght);// llamando a insertionSort
+  printArreglo(arreglo,lenght);// imprimiendo el arreglo ordenando
 
 
 
@@ -26,7 +26,7 @@ int main()
 
 void createArreglo( int arreglo[],int lenght)
 {
-
+  //Ingresar los valores de un arreglo pidiendo un lenght
   for( int i = 0 ; i < lenght ; i++)
   {
     int askNumber; cin >> askNumber;
@@ -37,6 +37,7 @@ void createArreglo( int arreglo[],int lenght)
 }
 void insertionSort( int arreglo[], int lenght)
 {
+
   for( int  i = 1 ; i < lenght ; i++)
   {
     int j = i;
@@ -53,6 +54,7 @@ void insertionSort( int arreglo[], int lenght)
 
 void printArreglo(int arreglo[],int lenght)
 {
+  //imprime los valores del arreglo 
   cout << "La lista es: ";
   for(int x = 0 ; x < lenght ; x++)
   {
