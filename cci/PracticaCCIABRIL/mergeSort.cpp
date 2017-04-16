@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-void insertionSort(int arreglo[] , int lenght);
+void mergeSort(int arreglo[] , int lenght);
 void createArreglo(int arreglo[], int lenght);
 void printArreglo(int arreglo[], int lenght);
 int main()
@@ -16,7 +16,7 @@ int main()
   cout << endl;
   printArreglo(arreglo,lenght);
 
-  insertionSort(arreglo,lenght);
+  mergeSort(arreglo,lenght);
   printArreglo(arreglo,lenght);
 
 
@@ -35,19 +35,9 @@ void createArreglo( int arreglo[],int lenght)
 
 
 }
-void insertionSort( int arreglo[], int lenght)
+void mergeSort( int arreglo[], int lenght)
 {
-  for( int  i = 1 ; i < lenght ; i++)
-  {
-    int j = i;
-    while ( j > 0 && arreglo[j-1] > arreglo [j])
-    {
-      int temp = arreglo[j];
-      arreglo[j]=arreglo[j-1];
-      arreglo[j-1]=temp;
-      j--;
-    }
-  }
+
 
 }
 
